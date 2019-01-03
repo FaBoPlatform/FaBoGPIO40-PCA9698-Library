@@ -1,0 +1,42 @@
+#######################################
+# Syntax Coloring Map For FaBoGPIO40-PCA9698-Library
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+FaBoGPIO40 KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+configuration	KEYWORD2
+digitalWrite 	KEYWORD2
+digitalRead		KEYWORD2
+setAllClear		KEYWORD2
+portMode		KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+PCA9698_SLAVE_ADDRESS LITERAL1
+PCA9698_OUTPUT_REG LITERAL1
+PCA9698_CONFIGURATION_REG LITERAL1
+PCA9698_INPUT_PORT0 LITERAL1
+PCA9698_INPUT_PORT1 LITERAL1
+PCA9698_INPUT_PORT2 LITERAL1
+PCA9698_INPUT_PORT3 LITERAL1
+PCA9698_INPUT_PORT4 LITERAL1
+PCA9698_OUTPUT_PORT0 LITERAL1
+PCA9698_OUTPUT_PORT1 LITERAL1
+PCA9698_OUTPUT_PORT2 LITERAL1
+PCA9698_OUTPUT_PORT3 LITERAL1
+PCA9698_OUTPUT_PORT4 LITERAL1
+PCA9698_CONFIG_PORT0 LITERAL1
+PCA9698_CONFIG_PORT1 LITERAL1
+PCA9698_CONFIG_PORT2 LITERAL1
+PCA9698_CONFIG_PORT3 LITERAL1
+PCA9698_CONFIG_PORT4 LITERAL1
