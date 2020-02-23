@@ -178,6 +178,12 @@ void FaBoGPIO40::portMode(uint8_t port, uint8_t mode){
     } else if(mode == OUTPUT) {
       writeI2c(PCA9698_CONFIG_PORT3, 0x00);
     }
+  } else if(port == 4) { 
+    if(mode == INPUT) {
+      writeI2c(PCA9698_CONFIG_PORT4, 0xff);
+    } else if(mode == OUTPUT) {
+      writeI2c(PCA9698_CONFIG_PORT4, 0x00);
+    }
   }
 }
   
