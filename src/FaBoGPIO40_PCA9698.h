@@ -36,6 +36,11 @@
 #define PCA9698_CONFIG_PORT2 0x1A
 #define PCA9698_CONFIG_PORT3 0x1B
 #define PCA9698_CONFIG_PORT4 0x1C
+#define PCA9698_INT_PORT0 0x20
+#define PCA9698_INT_PORT1 0x21
+#define PCA9698_INT_PORT2 0x22
+#define PCA9698_INT_PORT3 0x23
+#define PCA9698_INT_PORT4 0x24
 
 
 
@@ -58,7 +63,7 @@ class FaBoGPIO40 {
     int digitalRead(uint8_t pin);
     void setAllClear();
     void portMode(uint8_t port, uint8_t mode);
-  private:
+    void setInt(uint8_t port);
     uint8_t _i2caddr;
     uint8_t _output_port0;
     uint8_t _output_port1;
@@ -67,6 +72,7 @@ class FaBoGPIO40 {
     uint8_t _output_port4;
     void writeI2c(uint8_t address, uint8_t data);
     void readI2c(uint8_t address, uint8_t num, uint8_t * data);
+
 };
 
 #endif // FABOGPIO40_PCA9698_H
