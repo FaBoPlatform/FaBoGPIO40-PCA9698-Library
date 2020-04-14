@@ -63,7 +63,7 @@ class FaBoGPIO40 {
     int digitalRead(uint8_t pin);
     void setAllClear();
     void portMode(uint8_t port, uint8_t mode);
-    void setInt(uint8_t port);
+    void setInt(uint8_t port, uint8_t mask);
     uint8_t _i2caddr;
     uint8_t _output_port0;
     uint8_t _output_port1;

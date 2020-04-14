@@ -190,17 +190,17 @@ void FaBoGPIO40::portMode(uint8_t port, uint8_t mode){
 /**
  @brief set interrupt to port
 */
-void FaBoGPIO40::setInt(uint8_t port){  
+void FaBoGPIO40::setInt(uint8_t port, uint8_t mask){  
   if(port == 0) { 
-      writeI2c(PCA9698_INT_PORT0, 0x00);
+      writeI2c(PCA9698_INT_PORT0, mask);
   } else if(port == 1) { 
-      writeI2c(PCA9698_INT_PORT1, 0x00);
+      writeI2c(PCA9698_INT_PORT1, mask);
   } else if(port == 2) { 
-      writeI2c(PCA9698_INT_PORT2, 0x00);
+      writeI2c(PCA9698_INT_PORT2, mask);
   } else if(port == 3) { 
-      writeI2c(PCA9698_INT_PORT3, 0x00);
+      writeI2c(PCA9698_INT_PORT3, mask);
   } else if(port == 4) { 
-      writeI2c(PCA9698_INT_PORT4, 0x00);
+      writeI2c(PCA9698_INT_PORT4, mask);
   } 
 }
   
